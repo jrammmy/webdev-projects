@@ -1,0 +1,53 @@
+.box {
+  width: 35%;
+  margin: auto;
+  border: 2px solid black;
+}
+.todoList {
+  list-style: none;
+}
+
+h3 {
+  text-align: center;
+  padding: 15px;
+  background-color: steelblue;
+  margin: 0;
+  font-size: 32px;
+  color: white;
+}
+
+#edit {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 20px;
+}
+
+li:nth-child(2n) {
+  background-color: #f4f4f4;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 20px;
+  color: steelblue;
+}
+
+.hide {
+  display: none;
+}
+
+.fa-trash-alt:hover {
+  color: red;
+  cursor: pointer;
+}

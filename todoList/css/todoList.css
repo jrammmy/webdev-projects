@@ -1,8 +1,23 @@
-.box {
-  width: 35%;
-  margin: auto;
-  border: 2px solid black;
+body {
+  background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+  /* Chrome 10+, Saf5.1+ */
+  background: -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+  /* IE10 */
+  background: -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+  /* Opera 11.10+ */
+  background: linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%);
+  /* W3C */
+  font-family: 'Mukta Mahee', sans-serif;
 }
+
+.box {
+  width: 50%;
+  margin: 10% auto;
+  background-color: #ffffff;
+}
+
 .todoList {
   list-style: none;
 }
@@ -12,17 +27,25 @@ h3 {
   padding: 15px;
   background-color: steelblue;
   margin: 0;
-  font-size: 32px;
-  color: white;
+  font-size: 36px;
+  color: #fff;
+  background: #2980b9;
+  border-left: 10px solid red;
+  padding-left: 0;
 }
 
-#edit {
-  cursor: pointer;
+#add {
   font-size: 14px;
 }
 
+#add:hover {
+  cursor: pointer;
+  font-size: 14px;
+  color: #EAECC6;
+}
+
 ul {
-    padding: 0;
+  padding: 0;
 }
 
 li {
@@ -35,7 +58,12 @@ li:nth-child(2n) {
   background-color: #f4f4f4;
 }
 
-input {
+label:hover {
+  cursor: pointer;
+  color: steelblue;
+}
+
+input[type=text] {
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
@@ -50,4 +78,25 @@ input {
 .fa-trash-alt:hover {
   color: red;
   cursor: pointer;
+}
+
+.fa-trash-alt{
+  float: left;
+  padding: 5px;
+}
+
+/* .finished {
+  text-decoration: line-through;
+} */
+
+ul li input[type="text"] {
+  display: none;
+}
+
+ul li.editMode input[type="text"] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
 }
